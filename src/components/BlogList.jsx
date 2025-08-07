@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import { posts } from "../lib/posts"
+import BlogItem from './BlogItem'
 
 export default function BlogList() {
 const [blogPosts, setBlogPosts]= useState(posts)
@@ -13,6 +14,7 @@ console.log(blogPosts)
 
             {blogPosts.map((post)=>
                  <li>{post.title}</li>)}
+                 <BlogItem post={posts}/>
             </ul>
             
         </div>
