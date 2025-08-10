@@ -9,7 +9,7 @@ export default function BlogItem({post}) {
         <div>
             <h2>{post.title}</h2>
             <a href ={post.slug}></a>
-            <p>Content</p>
+            <p>{post.Content}</p>
 
         </div>
     )
